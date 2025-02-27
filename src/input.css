@@ -113,4 +113,7 @@
     .background{
         @apply bg-[url('../img/Wallpaper/bg.png')] bg-cover bg-center dark:bg-none;
     }
+    .background-contact{
+        @apply md:bg-[url('../img/Wallpaper/bg.png')] bg-none bg-cover bg-center dark:bg-none;
+    }
 }

@@ -80,63 +80,63 @@ const projects = [
         title: "LandingPage - Coffe Friend",
         description: "Design using the Framer app",
         category: "uiux",
-        image: "./img/Img content/coffefriend.png",
+        image: "./img/img_content/coffefriend.png",
         link: "https://caffe-friends.framer.ai/"
     },
     {
         title: "LandingPage - NCT",
         description: "Built with HTML, CSS, and JavaScript",
         category: "web",
-        image: "./img/Img content/landingpageNCT.png",
+        image: "./img/img_content/landingpageNCT.png",
         link: "https://aisyahrr.github.io/LandingPage-NCT/"
     },
     {
         title: "Mobile App - Spotify",
         description: "Design using the Figma app",
         category: "uiux apps",
-        image: "./img/Img content/spotify.png",
+        image: "./img/img_content/spotify.png",
         link: "https://www.figma.com/proto/RhHBbPUQE443glp0kE79IU/Spotify?node-id=0-1&t=AFqPISAMjcj2g9kj-1"
     },
     {
         title: "Kalkulator",
         description: "Built with HTML, CSS, and JavaScript",
         category: "web",
-        image: "./img/Img content/calcu.png",
+        image: "./img/img_content/calcu.png",
         link: "https://aisyahrr.github.io/Kalkulator/"
     },
     {
         title: "LandingPage - Arte & Aroma",
         description: "Design using the Wordpress",
         category: "uiux",
-        image: "./img/Img content/wordpress.png",
+        image: "./img/img_content/wordpress.png",
         link: "https://aisyhrr.wordpress.com/?_gl=1*1k7oa4j*_gcl_au*NTg3ODk1NDc4LjE3Mzg4NDU3NjE."
     },
     {
         title: "Portfolio",
         description: "Design using the Figma app",
         category: "uiux",
-        image: "./img/Img content/Protofolio.png",
+        image: "./img/img_content/Protofolio.png",
         link: "https://www.figma.com/proto/ON9IonwczZhmou7DBeVFmN/Portofolio?node-id=0-1&t=eOdlne4iJkOM0ssz-1"
     },
     {
         title: "LandingPage-ISC",
         description: "Built with HTML, Tailwindcss, JavaScript",
         category: "web",
-        image: "./img/Img content/LandingpageISC.png",
+        image: "./img/img_content/LandingpageISC.png",
         link: "https://aisyahrr.github.io/LandingPage-ISC/"
     },
     {
         title: "SeoulFlix Web",
         description: "Built with PHP, CSS, JavaScript",
         category: "web",
-        image: "./img/Img content/SeoulFlix.png",
+        image: "./img/img_content/SeoulFlix.png",
         link: "#"
     },
     {
         title: "Urban'attire Web",
         description: "Built with Reactjs, Tailwindcss, JavaScript",
         category: "web",
-        image: "./img/Img content/URBANWEB.png",
+        image: "./img/img_content/URBANWEB.png",
         link: "#"
     },
 ];
