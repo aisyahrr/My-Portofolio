@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="img/Img Logo/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>A|R Portofolio</title>
+</head>
+<body class="overflow-x-hidden md:overflow-x-hidden dark:bg-DarkThame dark:text-white w-full ">
+    <!--Header-->
+    <header class="fixed top-0 left-0 w-full z-50 ">
+        <nav class="w-full flex px-5 lg:px-7 xl:px-[7%] py-1 justify-between items-center">
+            <div class="font-pacifico text-2xl md:3xl text-black dark:text-white">aisyh.rr</div>
+            
+            <ul class="menu hidden md:flex gap-6 lg:gap-12 items-center rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+                <li class="menu-item group">
+                    <a href="#top" class="current flex flex-col items-center justify-center text-gray-700 hover:text-blue-500">
+                        <i class="ri-home-4-line text-xl p-2.5 rounded-full transition duration-300 group-hover:bg-first group-hover:text-white"></i>
+                        <span class="span-nav opacity-0 group-hover:opacity-100 transition">Home</span>
+                    </a>
+                </li>
+            
+                <li class="menu-item group">
+                    <a href="#about" class="flex flex-col items-center justify-center text-gray-700 hover:text-blue-500">
+                        <i class="ri-user-line text-xl p-2.5 rounded-full transition duration-300 group-hover:bg-first group-hover:text-white"></i>
+                        <span class="span-nav opacity-0 group-hover:opacity-100 transition">About Me</span>
+                    </a>
+                </li>
+            
+                <li class="menu-item group">
+                    <a href="#mywork" class="flex flex-col items-center justify-center text-gray-700 hover:text-blue-500">
+                        <i class="ri-stack-line text-xl p-2.5 rounded-full transition duration-300 group-hover:bg-first group-hover:text-white"></i>
+                        <span class="span-nav opacity-0 group-hover:opacity-100 transition">Project</span>
+                    </a>
+                </li>
+                
+                <li class="menu-item group">
+                    <a href="#myskill" class="flex flex-col items-center justify-center text-gray-700 hover:text-blue-500">
+                        <i class="ri-tools-line text-xl p-2.5 rounded-full transition duration-300 group-hover:bg-first group-hover:text-white"></i>
+                        <span class="span-nav opacity-0 group-hover:opacity-100 transition">My Skill</span>
+                    </a>
+                </li>
+
+                <li class="menu-item group">
+                    <a href="#sertifikat" class="flex flex-col items-center justify-center text-gray-700 hover:text-blue-500">
+                        <i class="ri-award-fill  text-xl p-2.5 rounded-full transition duration-300 group-hover:bg-first group-hover:text-white"></i>
+                        <span class="span-nav opacity-0 group-hover:opacity-100 transition">Sertifikat</span>
+                    </a>
+                </li>
+            </ul>
+            
+            
+            <div class="flex justify-center items-center gap-0 md:gap-4">
+                <button onclick=toggleTheme()>
+                    <i class="ri-moon-line text-2xl dark:hidden"></i>   
+                    <i class="ri-sun-line text-2xl hidden dark:block"></i>
+                </button>
+                <a href="#contact" class="hidden lg:flex items-center gap-2 px-5 py-2.5 border border-gray-500 rounded-full ml-4">
+                    Contact
+                    <i class="ri-arrow-right-up-line text-base"></i>
+                </a>
+                <button class="block lg:hidden ml-3" onclick= openMenu() >
+                    <i class="ri-menu-line text-3xl dark:text-white"></i>
+                </button>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <ul id="sideMenu" class="flex lg:hidden flex-col gap-6 py-20 px-10 fixed right-[-16rem]  top-0 bottom-0 
+                w-64 z-[60] h-screen bg-rose-50 dark:bg-secondary transition-all duration-500">
+                    <div class="absolute right-6 top-6" onclick= closeMenu() >
+                        <i class="ri-logout-box-r-line text-2xl cursor-pointer"></i>
+                    </div>
+                    <li class="ri-home-4-line text-xl"><a href="#top"onclick="closeMenu()" class="px-2">Home</a></li>
+                    <li class="ri-user-line text-xl"><a href="#about"onclick="closeMenu()"class="px-2">About me</a></li>
+                    <li class="ri-stack-line text-xl"><a href="#mywork"onclick="closeMenu()"class="px-2">Project</a></li>
+                    <li class="ri-tools-line text-xl"><a href="#myskill"onclick="closeMenu()"class="px-2">My Skill</a></li>
+                    <li class="ri-award-fill text-xl"><a href="#sertifikat"onclick="closeMenu()"class="px-2">Sertifikat</a></li>
+                    <li class="ri-contacts-book-3-line text-xl"><a href="#contact"onclick="closeMenu()"class="px-2">Contact me</a></li>
+                </ul>
+        </nav>
+    </header>
+    <!--  Content  -->
+    <main class="m-auto w-full">
+    <!----------------------- HERO SECTION ---------------------------->
+    <section id="top" class="relative pt-16 py-16 md:py-10 md:pb-10 ">
+            <div class=" px-5 lg:px-8 xl:px-[8%] py-4 md:mt-5 mx-auto md:mx-0">
+                <!-- img -->
+                <div class="hidden md:block absolute top-0 left-[30%] animate-scaleAnimation lg:left-[35%]">
+                    <p class="font-londrina text-[400px] lg:text-[450px] text-indigo-950 dark:text-first uppercase -z-10 opacity-5">Hi</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 md:mx-5 items-center gap-5">
+                    <!-- Konten Tulisan -->
+                    <div class="space-y-2 md:w-full order-2 md:order-1 text-left">
+                        <h3 class="text-2xl md:text-2xl lg:text-3xl font-bold text-test">
+                            I am Aisyah Rahmawati
+                        </h3>
+                        <h1>
+                            <span class="title"> Web Development + </span>
+                            <br> 
+                            <span class="title"> UI/UX Designer </span>
+                        </h1>
+                                <!-- Gambar -->
+                        <div class="relative md:w-1/2 justify-items-center  md:hidden">
+                            <img src="img/Img content/Me.jpg" alt="person" loading="lazy"
+                                class="my-10 w-[90%] md:w-full lg:max-w-[80%] duration-300 origin-center border-2 border-first rounded-[38px]">
+                        </div>
+
+                        <p class="max-w-xl text-xl md:text-md pb-5">
+                            "Hello! I’m Aisyah, crafting seamless, beautiful, and user-friendly digital experiences."
+                        </p>
+                
+                        <div class="flex items-center flex-wrap gap-5">
+                            <button class="btn_outline"> <a href="/public/PDF/My_Curriculum.pdf" download="Aisyah_Rahmawati_CV">
+                                My Curriculum Vitae </a>
+                            </button>
+                
+                            <div class="flex items-center gap-5">
+                                <a class="sosial-icon"><i class="fa-brands fa-twitter z-10"></i></a>
+                                <a href="https://github.com/aisyahrr" class="sosial-icon"><i class="fa-brands fa-github z-10"></i></a>
+                                <a href="https://www.instagram.com/aisyh.rr" class="sosial-icon"><i class="fa-brands fa-instagram z-10"></i></a>
+                                <a href="https://www.linkedin.com/in/aisyhrr" class="sosial-icon"><i class="fa-brands fa-linkedin z-10"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Img sm-->
+                    <div class="relative hidden md:flex md:w-full justify-center order-1 md:order-2">
+                        <img src="img/Img content/Me.jpg" alt="person"
+                            class="my-10 ml-10 md:w-[65%] lg:max-w-[80%] duration-300 origin-center rotate-[4.5deg] border-2 border-secondary rounded-[38px]
+                            hover:rotate-0 hover:first">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!----------------------- ABOUT ME -------------------------------->
+    <section id="about" class="w-full px-5 lg:px-8 xl:px-[8%] mx-auto 
+        md:mx-0 mt-5 pt-20 pb-14 background">
+            <h4 class="text-center mb-1">Introduction</h4>
+            <h2 class="text-center text-4xl font-semibold "> About me </h2>
+            <div class="flex flex-col w-full lg:flex-row items-center gap-10 my-7 md:my-20  md:mx-10">
+                <div class="max-w-max mx-auto relative">
+                    <img src="img/Img content/aboutme.jpg" alt="" class="w-60 h-60 md:w-80 md:h-full
+                    rounded-full sm:rounded-[38px] border-2 border-secondary hover:border-first">
+                </div>
+                <div class="flex-1 ml-0 md:ml-9">
+                    <h1 class="text-2xl pb-3 font-inter">Hello! I am <span class="font-semibold bg-gradient-to-r from-first to-secondary dark:to-white
+                    inline-block text-transparent bg-clip-text"> Aisyah Rahmawati</span></h1>
+                    <div>
+                        <p class="max-w-xl mb-5 text-justify"> a Web Development and UI/UX Designer who is studying at Pamulang University. I have a passion for designing and developing 
+                            websites that are not only functional, but also have an optimal user experience.
+                        </p>
+                        <p class="max-w-xl mb-10 text-justify"> With expertise in HTML5, CSS, Javascript, PHP and frameworks such as React.js and Tailwind CSS, I focused on developing responsive and interesting 
+                            interfaces. In addition, I also have an understanding in UX Research, Wireframing, and Prototyping using tools like Figma.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+    </section>
+    <!----------------------- PROJECT -------------------------------->
+    <section id="mywork" class="md:pt-20 pt-20 py-10 md:py-2 md:pb-10">
+        <div class="flex flex-col items-center gap-3 text-center">
+            <h2 class="subtitle ">My Recent Work</h2>
+            <p class="max-w-2xl m-2">
+                "Berikut adalah beberapa proyek terbaru yang telah saya kerjakan, mencerminkan keahlian dan kreativitas saya dalam pengembangan web dan desain digital."
+            </p>
+        </div>
+        <div class="w-full flex justify-center">
+            <div class="relative w-max mx-auto my-10 h-10 text-xs inline-flex items-center
+                px-[3px] rounded-full bg-slate-50 border border-secondary overflow-hidden transition
+                md:h-12 md:text-base">
+                <div class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 ml-1 rounded-full bg-first  md:h-11"></div>
+                <div id="tab-container" class="flex dark:text-secondary"></div>
+            </div>
+        </div>        
+        <div class="mt-4 relative px-10 rounded-3xl"> 
+            <ul id="project-list" class="project grid grid-cols-1 gap-5 lg:grid-cols-3 lg:gap-6"></ul>            
+        </div>
+    </section>
+    <!----------------------- MY SKILL -------------------------------->
+    <section id="myskill" class="relative md:pt-5 py-10 md:py-2 md:pb-10  background ">
+            <div class=" flex flex-col items-center gap-5 pt-20 text-center">
+                <h2 class="subtitle"> My Skill </h2>
+                <p class="max-w-2xl"> "Keahlian saya dalam pengembangan web terus berkembang. Saya selalu berusaha mengikuti tren 
+                    terbaru untuk menciptakan pengalaman digital yang lebih baik." </p>
+            </div>
+            <div id="skills-container" class="grid grid-cols-2 gap-5 md:flex md:flex-wrap justify-center pb-10 mt-5 md:gap-16 md:mt-10"></div>
+
+    </section>
+    <!----------------------- Sertifikat ----------------------------->
+    <section id="sertifikat" class="relative md:my-10 md:py-24 my-5 w-full py-10">
+        <div class=" flex flex-col items-center gap-5 pb-10 text-center">
+            <h2 class="subtitle"> My Sertifikat </h2>
+        </div>
+        <div class="relative justify-center items-center">
+            <button id="prev" class="absolute md:left-0 md:ml-[60px] left-0 top-[45%] md:top-[50%] h-10 w-10 text-lg items-center justify-center bg-indigo-50 dark:bg-DarkThame dark:text-white text-black p-2 rounded-full shadow-xl z-40">
+                ❮
+            </button>
+            <!--Content Sertifikat-->
+            <div id="slider" class="post flex overflow-hidden space-x-5 mx-5 pr-5 md:mx-20">
+                <div class="group [perspective:1000px]">
+                    <div class="sertifikat-card flex-none "
+                    onclick="flipCard(this)">
+                        <div class="card relative h-full w-full rounded-lg transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] " >
+                            <!-- Sisi Depan -->
+                            <div class="absolute inset-0 [backface-visibility:hidden]">
+                                <img src="./img/Sertifikat/DicodingWeb.jpg" alt="Post Image" class="post-img w-full h-full object-cover rounded-md">
+                            </div>
+                
+                            <!-- Sisi Belakang (Tambahkan rotasi 180deg) -->
+                            <div class="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                                <img src="./img/Sertifikat/dicodingJs.jpg" alt="Post Image" class="post-img w-full h-full object-cover rounded-md">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>            
+                <div class="sertifikat-card flex-none">
+                    <img src="./img/Sertifikat/LombaISC.jpg" alt="Post Image" class="post-img w-full h-full object-cover rounded-md">
+                </div>
+                <div class="group [perspective:1000px]">
+                    <div class="sertifikat-card flex-none "
+                    onclick="flipCard(this)">
+                        <div class="card relative h-full w-full rounded-lg transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] " >
+                            <!-- Sisi Depan -->
+                            <div class="absolute inset-0 [backface-visibility:hidden]">
+                                <img src="./img/Sertifikat/AISYAH RAHMAWATI.jpg" alt="Post Image" class="post-img w-full h-full object-cover rounded-md">
+                            </div>
+                
+                            <!-- Sisi Belakang (Tambahkan rotasi 180deg) -->
+                            <div class="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                                <img src="./img/Sertifikat/DicodingReact.jpg" alt="Post Image" class="post-img w-full h-full object-cover rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="group [perspective:1000px]">
+                    <div class="relative sertifikat-myskill shadow-md p-4 rounded-md flex-none "
+                    onclick="flipCard(this)">
+                        <div class="card relative h-full w-full rounded-lg transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] " >
+                            <!-- Sisi Depan -->
+                            <div class="absolute inset-0 [backface-visibility:hidden]">
+                                <img src="./img/Sertifikat/Myskill-Wordpress.jpg" alt="Post Image" class="post-img w-full h-full object-cover rounded-md">
+                            </div>
+                
+                            <!-- Sisi Belakang (Tambahkan rotasi 180deg) -->
+                            <div class="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                                <img src="./img/Sertifikat/Myskill-Marketing.jpg" alt="Post Image" class="post-img w-full h-full object-cover rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="relative sertifikat-myskill shadow-md p-4 rounded-md flex-none">
+                    <img src="./img/Sertifikat/Myskill-Excel.jpg" alt="Post Image" class="post-img w-full h-full object-cover rounded-md">
+                </div>
+            </div>
+            <!--Content Sertifikat-->
+            <button id="next" class="absolute md:mr-[60px] md:right-0 -right-[9px] top-[45%] md:top-[50%] h-10 w-10 text-lg justify-center items-center bg-indigo-50 dark:bg-DarkThame dark:text-white text-black p-2 rounded-full shadow-xl z-40">
+                ❯
+            </button>
+        </div>   
+    </section >
+    <!----------------------- Contact --------------------------------> 
+    <section id="contact" class="relative flex justify-center items-center md:pt-20 md:pb-10 py-10 dark:bg-DarkThame background">
+        <div class="w-full max-w-3xl p-8 rounded-lg bg-white dark:bg-DarkThame md:border-first md:border-2 dark:text-white">
+            <h2 class="text-3xl font-bold text-center mb-6">
+                Contact <span class="text-first">Me!</span>
+            </h2>
+    
+            <form action="#" method="POST" class="space-y-4">
+                <!-- Grid Input Fields -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="First Name" class="w-full p-3 border rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-200" required>
+                    <input type="text" placeholder="Last Name" class="w-full p-3 border rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-200" required>
+                    <input type="text" placeholder="Mob. Number" class="w-full p-3 border rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-200" required>
+                    <input type="email" placeholder="Email Address" class="w-full p-3 border rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-200" required>
+                </div>
+    
+                <!-- Message Input -->
+                <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-200" required></textarea>
+    
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-gray-200 justify-center text-black font-semibold py-3 rounded-lg hover:bg-first hover:text-white transition duration-300">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer class=" w-ful text-gray-200 bg-secondary dark:bg-DarkThame text-center py-3 bottom-0">
+        <h5 class="font-sans text-md"> Copyright © 2025 aisyh.rr</h5> 
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script src="Portofolio.js"></script>
+<script src="data.js"></script>
+</body>
+</html>

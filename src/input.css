@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    button{
+        @apply flex;
+    }
+}
+
+@layer components{
+    .icon-nav {
+        @apply flex flex-col items-center justify-center text-gray-700 hover:text-blue-500;
+    }
+    .btn_outline {
+        @apply  border flex justify-center items-center border-first text-first py-4 px-9 rounded-full
+        hover:bg-first hover:text-white duration-300 dark:text-white;
+    }
+    .title, 
+    .subtitle {
+        @apply text-4xl lg:text-4xl xl:text-[55px] font-bold
+        bg-gradient-to-r from-first to-secondary dark:to-white
+        inline-block text-transparent bg-clip-text pb-4;
+    }
+    .subtitle {
+        @apply text-3xl md:text-3xl lg:text-4xl;
+    }
+}
+
+@layer utilities{
+    /*hero*/
+    .sosial-icon{
+        @apply relative border border-first text-first h-10 w-10 rounded-full 
+        grid place-items-center cursor-pointer hover:text-white duration-300 dark:text-white;
+    }
+    .sosial-icon::before{
+        @apply content-[''] absolute w-[100%] h-[100%] bg-first inset-0 rounded-full 
+        scale-0 transition-transform ease-in-out duration-300;
+    }
+    .sosial-icon:hover::before{
+        @apply scale-100 origin-center;
+    }
+    /* My skill */
+    .skill-card img{
+        @apply duration-300;
+    }
+    .skill-card:hover img{
+        @apply scale-110;
+    }
+    .nav-link {
+        @apply relative text-gray-700 hover:text-blue-500 transition-colors duration-300;
+    }
+    .nav-link::after {
+        @apply content-[''] absolute left-0 bottom-0 w-full h-[2px] bg-blue-500 
+        scale-x-0 transition-transform duration-300 ease-in-out;
+        transform-origin: right;
+    }
+    .nav-link:hover::after {
+        @apply scale-x-100;
+        transform-origin: left;
+    }
+    .indicator{
+        transition: left 0.4s;
+    }
+
+    .work_card > div{
+        @apply duration-500;
+    }
+    .work_card:hover > div{
+        @apply bottom-0;
+    }
+    @media (hover: none) {
+        .work_card:hover > div {
+            bottom: auto !important;
+        }
+    }
+    /*icon header*/
+    .current{
+        @apply rounded-full;
+        color: indigo;
+        background: rgb(243, 238, 238);
+    }
+    .span-nav {
+        @apply absolute z-50 bg-indigo-50 text-secondary font-sans 
+            px-[10px] py-[3px] rounded-[5px] translate-y-[53px] pointer-events-none;
+    }
+
+    .span-nav::before {
+        @apply absolute -top-1 w-[10px] h-[10px] left-1/2 
+            rotate-45 -translate-x-1/2 bg-indigo-50;
+        content: '';/* Gunakan CSS biasa untuk variabel */
+    }
+    .sertifikat-card{
+        @apply relative md:w-[500px] md:h-[350px] w-[300px] h-[230px] shadow-md p-2 md:p-4 rounded-md  dark:bg-secondary bg-[url('../img/Wallpaper/bg-sertif.png')] bg-cover bg-center ;
+    }
+    .sertifikat-myskill {
+        @apply relative md:w-[600px] md:h-[350px] w-[400px] h-[230px] shadow-md p-2 md:p-4 rounded-md  dark:bg-secondary bg-[url('../img/Wallpaper/bg-sertif.png')] bg-cover bg-center;
+    }    
+    .tabler-certificate {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M12 15a3 3 0 1 0 6 0a3 3 0 1 0-6 0'/%3E%3Cpath d='M13 17.5V22l2-1.5l2 1.5v-4.5'/%3E%3Cpath d='M10 19H5a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-1 1.73M6 9h12M6 12h3m-3 3h2'/%3E%3C/g%3E%3C/svg%3E");
+        background-color: currentColor;
+        -webkit-mask-image: var(--svg);
+        mask-image: var(--svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+    }
+
+    .background{
+        @apply bg-[url('../img/Wallpaper/bg.png')] bg-cover bg-center dark:bg-none;
+    }
+}
