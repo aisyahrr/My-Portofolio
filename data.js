@@ -139,6 +139,13 @@ const projects = [
         image: "./img/img_content/URBANWEB.png",
         link: "#"
     },
+    {
+        title: "NjunngYum Web",
+        description: "Design using the Figma app",
+        category: "uiux apps",
+        image: "./img/img_content/NjunngYum.png",
+        link: "https://www.figma.com/proto/32y2x061fAxz2mQmF8Q83o/BurgerJun?node-id=0-1&t=yD9JGunMmQLaybwD-1"
+    },
 ];
 
 const projectContainer = document.querySelector(".project"); // Ambil elemen ul
