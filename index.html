@@ -86,56 +86,60 @@
     <!--  Content  -->
     <main class="m-auto w-full">
     <!----------------------- HERO SECTION ---------------------------->
-    <section id="top" class="relative pt-16 py-16 md:py-10 md:pb-10 ">
-            <div class=" px-5 lg:px-8 xl:px-[8%] py-4 md:mt-5 mx-auto md:mx-0">
-                <!-- img -->
-                <div class="hidden md:block absolute top-0 left-[30%] animate-scaleAnimation lg:left-[35%]">
-                    <p class="font-londrina text-[400px] lg:text-[450px] text-indigo-950 dark:text-first uppercase -z-10 opacity-5">Hi</p>
+    <section id="top" class="relative pt-16 py-16 md:py-10 md:pb-10">
+        <div class="px-5 lg:px-8 xl:px-[8%] py-4 md:mt-5 mx-auto md:mx-0">
+            <!-- Background Text -->
+            <div class="hidden md:block absolute top-0 left-[30%] lg:left-[35%] -z-10 opacity-5">
+                <p class="font-londrina text-[400px] lg:text-[450px] text-indigo-950 dark:text-first uppercase">Hi</p>
+            </div>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 md:mx-5 items-center gap-5">
+                <!-- Konten Tulisan -->
+                <div class="space-y-2 md:w-full order-2 md:order-1 text-left">
+                    <h3 class="text-2xl md:text-2xl lg:text-3xl font-bold text-test">
+                        I am Aisyah Rahmawati
+                    </h3>
+                    <h1>
+                        <span class="title"> Web Development + </span><br> 
+                        <span class="title"> UI/UX Designer </span>
+                    </h1>
+    
+                    <!-- Gambar (Mobile) -->
+                    <div class="relative md:hidden flex justify-center">
+                        <img src="img/img_content/Me.jpg" alt="person" loading="lazy"
+                            class="my-10 w-[90%] border-2 border-first rounded-[38px]">
+                    </div>
+    
+                    <p class="max-w-xl text-xl md:text-md pb-5">
+                        "Hello! I’m Aisyah, crafting seamless, beautiful, and user-friendly digital experiences."
+                    </p>
+    
+                    <div class="flex items-center flex-wrap gap-5">
+                        <button class="btn_outline">
+                            <a href="public/PDF/My_Curriculum.pdf" download="Aisyah_Rahmawati_CV">
+                                My Curriculum Vitae
+                            </a>
+                        </button>
+    
+                        <div class="flex items-center gap-5">
+                            <a class="sosial-icon"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://github.com/aisyahrr" class="sosial-icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/aisyh.rr" class="sosial-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aisyhrr" class="sosial-icon"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 md:mx-5 items-center gap-5">
-                    <!-- Konten Tulisan -->
-                    <div class="space-y-2 md:w-full order-2 md:order-1 text-left">
-                        <h3 class="text-2xl md:text-2xl lg:text-3xl font-bold text-test">
-                            I am Aisyah Rahmawati
-                        </h3>
-                        <h1>
-                            <span class="title"> Web Development + </span>
-                            <br> 
-                            <span class="title"> UI/UX Designer </span>
-                        </h1>
-                                <!-- Gambar -->
-                        <div class="relative md:w-1/2 justify-items-center  md:hidden">
-                            <img src="img/img_content/Me.jpg" alt="person" loading="lazy"
-                                class="my-10 w-[90%] md:w-full lg:max-w-[80%] duration-300 origin-center border-2 border-first rounded-[38px]">
-                        </div>
-
-                        <p class="max-w-xl text-xl md:text-md pb-5">
-                            "Hello! I’m Aisyah, crafting seamless, beautiful, and user-friendly digital experiences."
-                        </p>
-                
-                        <div class="flex items-center flex-wrap gap-5">
-                            <button class="btn_outline"> <a href="public/PDF/My_Curriculum.pdf" download="Aisyah_Rahmawati_CV">
-                                My Curriculum Vitae </a>
-                            </button>
-                
-                            <div class="flex items-center gap-5">
-                                <a class="sosial-icon"><i class="fa-brands fa-twitter z-10"></i></a>
-                                <a href="https://github.com/aisyahrr" class="sosial-icon"><i class="fa-brands fa-github z-10"></i></a>
-                                <a href="https://www.instagram.com/aisyh.rr" class="sosial-icon"><i class="fa-brands fa-instagram z-10"></i></a>
-                                <a href="https://www.linkedin.com/in/aisyhrr" class="sosial-icon"><i class="fa-brands fa-linkedin z-10"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Img sm-->
-                    <div class="relative hidden md:flex md:w-full justify-center order-1 md:order-2">
-                        <img src="img/Img content/Me.jpg" alt="person"
-                            class="my-10 ml-10 md:w-[65%] lg:max-w-[80%] duration-300 origin-center rotate-[4.5deg] border-2 border-secondary rounded-[38px]
-                            hover:rotate-0 hover:first">
-                    </div>
+    
+                <!-- Gambar (Desktop) -->
+                <div class="relative hidden md:flex justify-center order-1 md:order-2">
+                    <img src="img/img_content/Me.jpg" alt="person"
+                        class="my-10 w-[65%] lg:max-w-[80%] duration-300 border-2 border-secondary rounded-[38px] 
+                        transform rotate-[4.5deg] hover:rotate-0">
                 </div>
             </div>
+        </div>
     </section>
+    
     <!----------------------- ABOUT ME -------------------------------->
     <section id="about" class="w-full px-5 lg:px-8 xl:px-[8%] mx-auto 
         md:mx-0 mt-5 pt-20 pb-14 background">
