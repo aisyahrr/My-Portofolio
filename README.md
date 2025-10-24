@@ -8,7 +8,7 @@ Ini adalah **situs portofolio pribadi** yang dibangun menggunakan **HTML, Tailwi
 
 ## 🌐 Demo Langsung
 
-[Cek Demo My-Portofolio]([https://aisyahrr.github.io/My-Portofolio/])  
+[Cek Demo My-Portofolio](https://aisyahrr.github.io/My-Portofolio/)
 
 ---
 
